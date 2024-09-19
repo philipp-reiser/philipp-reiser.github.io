@@ -9,14 +9,35 @@
   <meta charset="UTF-8">
 
   <style>
-    #wrapper {
-    width: 800px;
-    margin: 0 auto;
-  }
-  @font-face{font-family:'PT Sans';
-               src: url("./PTSans-Regular.ttf") format("truetype");
-               font-weight:normal;
-               font-style:normal}
+	  
+@font-face{
+    font-family:'PT Sans'; /*normal*/
+    src: url("./PTSans-Regular.ttf") format('woff');
+    font-weight:normal;
+    font-style:normal
+}
+	  
+@font-face {
+    font-family: 'PT Sans'; /* italic */
+    src: url('./PTSans-Italic.ttf') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Sans'; /* bold */
+    src: url('./PTSans-Bold.ttf') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans'; /* bold italic*/
+    src: url('./PTSans-BoldItalic.ttf') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+	  
   body {
       	max-width: 900px;
 	margin: auto;
@@ -29,7 +50,7 @@
 <body>
 
   <h1 align="center">Philipp Reiser</h1>
-    <p> I am a postdoc at the Department of Mathematics of the University of Fribourg. I received my PhD in 2022 at the Karlsruhe Institute of Technology (KIT) under the supervision of Wilderich Tuschmann and Fernando Galaz-García. </p>
+    <p> I am a postdoc at the Department of Mathematics of the University of Fribourg in the group of Anand Dessai. I received my PhD in 2022 at the Karlsruhe Institute of Technology (KIT) under the supervision of Wilderich Tuschmann and Fernando Galaz-García. </p>
   
 </body>
 </html>
