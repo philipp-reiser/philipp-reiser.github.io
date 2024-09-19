@@ -9,6 +9,42 @@
   <meta charset="UTF-8">
 
   <style>
+
+div.a {
+	line-height: 1.5;
+	text-align: justify;
+	max-width: 750px;
+	margin: auto;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+	float: left;
+	padding: 10px;
+}
+
+.left {
+	width: 69%;
+}
+
+.right {
+	aligh: right;
+	width: 31%;
+}
+		
+.all {
+	width: 100%;
+}
+		
+.contact {	
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 	  
 @font-face{
     font-family:'PT Sans'; /*normal*/
@@ -49,8 +85,18 @@
   
 <body>
 
-  <h1 align="center">Philipp Reiser</h1>
-    <p> I am a postdoc at the Department of Mathematics of the University of Fribourg in the group of Anand Dessai. I received my PhD in 2022 at the Karlsruhe Institute of Technology (KIT) under the supervision of Wilderich Tuschmann and Fernando Galaz-García. </p>
-  
+<div class="a">
+  <div class="row">
+    <div class="column left" >
+  	<h1 align="center">Philipp Reiser</h1>
+    	<p> I am a postdoc at the Department of Mathematics of the University of Fribourg in the group of Anand Dessai. I received my PhD in 2022 at the Karlsruhe Institute of Technology (KIT) under the supervision of Wilderich Tuschmann and Fernando Galaz-García. </p>
+    </div>
+    <div class="column right" >
+	<span style='font-size:10px;'>&#8194;</span>
+	<img src="" alt="" style="max-width:295px;height:auto;">
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
